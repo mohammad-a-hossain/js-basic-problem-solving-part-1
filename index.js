@@ -144,3 +144,125 @@ fToC(120)
 filename.split('.').pop()
 console.log(filename.split('.').pop());
  */
+
+// 11.Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.
+ /* function difference(givenNum){
+       if(givenNum <= 13){
+           return 13 -givenNum
+       }else{
+           return (givenNum -13)*2
+       }
+  }
+  difference(33)
+  console.log(difference(33))
+  console.log(difference(3)) */
+
+//   12 Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum
+
+/* var numA =3
+var numB=33
+  var sum=numA + numB
+  if(numA === numB){
+     console.log(sum *3)
+  }else{
+      console.log('not same num')
+  } */
+
+//  13. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50
+
+/* function findResult(x,y){
+    if((x + y ==50 )|| x== 50|| y ==50){
+        return true
+    }else{
+        return false
+    }
+}
+var result =findResult(5,55)
+var result =findResult(50,55)
+console.log(result) */
+
+
+// 14.JavaScript program to  check from two given integers, whether one is positive and another one is negative
+/* function positiveNegetive(c,d){
+    if((c >0 && d<0) || (c<0 && d>0)){
+        return true
+    }else{
+        return false
+    }
+}
+var result=positiveNegetive(3,3)
+var result=positiveNegetive(3,-3)
+console.log(result) */
+
+// 15. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
+
+/* function remove_character(str, char_pos) 
+ {
+  part1 = str.substring(0, char_pos);
+  part2 = str.substring(char_pos + 1, str.length);
+  return (part1 + part2);
+ }
+
+ console.log(remove_character("w3resources",1)) */
+ // ----------explain
+ /* var str="w3resources"
+ //part1 = str.substring(0, char_pos);
+ part1=str.substring(0,1)
+ //part2 = str.substring(char_pos + 1, str.length);
+ part2=str.substring(1+1,str.length)
+ console.log(part1)
+ console.log(part2)
+ console.log(part1 +part2) */
+
+//  16.JavaScript program to create a new string from a given string changing the position of first and last characters.
+
+/* var str="aaron"
+ if(str.length <=0){
+     return str
+ }else{
+     var midChar = str.substring(1,str.length-1)
+    console.log(str.charAt(str.length -1) + midChar + str.charAt(0))
+    
+ } */
+
+//  17.JavaScript program to create a new string from a given string with the first character of the given string added at the front and back
+
+/* var str ="sohel"
+var firstChar = str.substring(0,1)
+console.log(firstChar + str +firstChar) */
+
+// 18.Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7
+/* function result (num){
+
+if(num % 3 ==0 || num % 7 ==0){
+    return true
+}else{
+    return false
+}
+}
+var res1=result(24)
+console.log(res1) */
+
+// 19.Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more
+
+/* var str="aaron"
+if(str.length >=3){
+   
+    var backStr= str.substring(str.length -3)
+    console.log(backStr+str+backStr)
+}else{
+    return false
+} */
+
+// 20.JavaScript program to check whether a string starts with 'Java' and false otherwise.
+/* var str="jvaandpython"
+if(str < 4){
+    return false 
+}else{
+    var findJava = str.substring(0,4)
+    if(findJava === "java"){
+        console.log(true)
+    }else{
+        console.log(false)
+    }
+} */
