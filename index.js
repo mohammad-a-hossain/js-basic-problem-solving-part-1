@@ -202,8 +202,14 @@ console.log(result) */
   part2 = str.substring(char_pos + 1, str.length);
   return (part1 + part2);
  }
+ */
+/*  let str = 'w3resources'.split('')
 
- console.log(remove_character("w3resources",1)) */
+ str.splice(1, 1)
+ str = str.join('')
+ console.log(str)
+ */
+ //console.log(remove_character("w3resources",1)) */
  // ----------explain
  /* var str="w3resources"
  //part1 = str.substring(0, char_pos);
@@ -213,6 +219,8 @@ console.log(result) */
  console.log(part1)
  console.log(part2)
  console.log(part1 +part2) */
+
+
 
 //  16.JavaScript program to create a new string from a given string changing the position of first and last characters.
 
@@ -225,11 +233,15 @@ console.log(result) */
     
  } */
 
+
+
 //  17.JavaScript program to create a new string from a given string with the first character of the given string added at the front and back
 
 /* var str ="sohel"
 var firstChar = str.substring(0,1)
 console.log(firstChar + str +firstChar) */
+
+
 
 // 18.Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7
 /* function result (num){
@@ -243,6 +255,8 @@ if(num % 3 ==0 || num % 7 ==0){
 var res1=result(24)
 console.log(res1) */
 
+
+
 // 19.Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more
 
 /* var str="aaron"
@@ -253,6 +267,7 @@ if(str.length >=3){
 }else{
     return false
 } */
+
 
 // 20.JavaScript program to check whether a string starts with 'Java' and false otherwise.
 /* var str="jvaandpython"
@@ -266,3 +281,132 @@ if(str < 4){
         console.log(false)
     }
 } */
+
+// 21. Write a JavaScript program to find the largest of three given integers.
+ /*  var a =33, b=62,c=88
+var max =0
+if(a >b){
+    max =a
+}else{
+    max =b
+}
+if(c > max){
+    max =c
+}else{
+    max
+}
+  console.log(max) */
+
+
+//   22.Write a program to check whether a specified character exists within the 2nd to 4th position in a given string.
+/* function check_char(str1, char)
+{
+ ctr = 0;
+ for (let i = 0; i < str1.length; i++)
+ {
+   if ((str1.charAt(i) == char) && (i >= 1 && i <= 3))
+   {
+       ctr=1;
+       break;
+   }
+  }
+  if (ctr==1) return true;
+  return false;
+}
+var res=check_char('aaron','r')
+console.log(res)
+ */
+
+// 23.JavaScript program to create new string with first 3 characters are in lower case from a given string. If the string length is less than 3 convert all the characters in upper case.
+/* 
+function strn_upper(str){
+    if(str.length < 3){
+        return str.toUpperCase()
+    }else{
+        first_part =(str.substring(0,3).toUpperCase())
+        secnd_part =(str.substring(3,str.length).toLowerCase())
+        return first_part +secnd_part
+    }
+}
+var res =strn_upper('sel')
+var res1 =strn_upper('seling')
+
+console.log(res)
+console.log(res1) */
+
+// 24.JavaScript program to check whether a given number is presents in the range 40..10000. 
+
+/*  function threeNum (x,y,z){
+     if(z <40 || z >10000){
+        return false
+     }
+     if(z >=x && z<= y)
+     {return true}
+ }
+
+ var ser1= threeNum(44,40044,45)
+ console.log(ser1)
+ */
+
+//  25. Write a JavaScript program to reverse a given string
+/* var str ="aaron"
+console.log(str.split('').reverse().join('')) */
+
+// 26.Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+/* function capitalize(str){
+    str = str.split(' ');
+
+    for(let i=0; i < str.length; i++){
+    str[i]=str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' ');
+    }
+var res=capitalize('my name is suhel')
+console.log(res) */
+/* 
+function newCapitalize(str){
+    str = str.split(' ')
+    let newText=[]
+    for(var x =0; x <str.length;x++){
+    newText.push(str[x].charAt(0).toUpperCase() + str[x].slice(1))
+    }
+    return newText.join(' ')
+}
+var ser= newCapitalize('my name is hossain')
+console.log(ser) */
+
+
+// 27. Write a JavaScript program to convert a given number to hours and minutes
+/* var num =450
+var hour = Math.floor(num/60)
+var minute = num % 60
+console.log(hour +":" + minute) */
+
+//28 Write a JavaScript program to convert a given number to hours and minutes
+/* var str = 'hossain ahmed'
+ var res=  str.split('').sort().join(' ')
+   console.log(res) */
+
+//    29.Write a JavaScript program to count the number of vowels in a given string. 
+/*    var str = 'hossain'
+       var res = str.match(/[aeiou]/gi)
+       console.log(res.length) */
+
+
+// 30.JavaScript program to create a new string of specified copies of a given string
+     /*   var str='abc'
+       console.log(str.repeat(2)) */
+/* var str='abce'
+console.log(str.substring(1, str.length -1))
+console.log(str.slice(1,str.length -1)) */
+
+//31.Write a JavaScript program to move last three character to the start of a given string. The string length must be greater or equal to three
+
+/* var str='aaron'
+ 
+  if(str.length <= 3){
+      console.log('false')
+  }else{
+      console.log(str.slice(-3)+str.slice(0,-3))
+  } */
