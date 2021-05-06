@@ -410,3 +410,97 @@ console.log(str.slice(1,str.length -1)) */
   }else{
       console.log(str.slice(-3)+str.slice(0,-3))
   } */
+
+
+// 32.Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank
+
+/* function cityName(str){
+    if(str.length < 3){
+        console.log('nill')
+    }else{
+         if(str.substring(0,3)==="Los" || str.substring(0,3)==="New"){
+             console.log('found',str)
+         }else{
+             console.log('not found')
+         }
+    }
+}
+var res =cityName('Los angels')
+var res1 =cityName('New angels')
+var res2 =cityName('dk')
+var res4 =cityName('india') */
+
+// .33JavaScript program to create a new string using the first and last n characters from a given string. The string length must be greater or equal to n.
+/* function newStr(str,  n){
+    if(str.length <= 3){
+        return false
+    }else{
+         first_part = str.substring(0,n)
+        // console.log(first_part)
+         last_part =str.substring(str.length -n)
+         //console.log(last_part)
+        console.log(first_part + last_part)
+    } 
+
+}
+var res = newStr('suhel',2)
+var res1 = newStr('sssssl',2) */
+
+
+/* function newStr(str,n){
+    if(str.length > n){
+       return str.length >= n ? str.slice(0,n) + str.slice(-n) : false ;
+    }else{
+        return false
+    }
+  
+}
+var res1 = newStr('sl',2) 
+console.log(res1)
+ */
+// 34. Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.
+
+
+/*    function mySum(arr) {
+
+    let result = 0
+    for(let i = 0; i < arr.length; i++){
+    if(arr.length == 3){
+    result += arr[i];
+    }else{
+    return "index out of bound";
+    }
+    }
+    return result;
+    }
+    
+    console.log(mySum([10, 32, 20]));
+
+    function calk(arr){
+        if(arr.length === 3){
+            return arr[0]+arr[1]+arr[2]
+        }else{
+            return false
+        }
+    }
+   console.log(calk([2,2,2]))
+ */
+    
+//    35.Write a JavaScript program to check whether 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1
+/*          var arr =[1,2,3]
+     
+     var last_pos =arr.length -1
+   console.log((arr[0] ===1) || arr[last_pos]===1?true: false)
+ */
+// .40. Write a JavaScript program to reverse the elements of a given array of integers length 3.
+/* var arr=[1,2,3]
+console.log(arr.reverse())
+ 
+function rev(array){
+     return array.map((element, idx, arr) => arr[(arr.length - 1) - idx]); 
+  
+}
+var res=rev([1,5,3])
+console.log(res) */
+
+// 41.. Write a JavaScript program to reverse the elements of a given array of integers length 3.
