@@ -458,6 +458,8 @@ var res1 = newStr('sssssl',2) */
 var res1 = newStr('sl',2) 
 console.log(res1)
  */
+
+
 // 34. Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.
 
 
@@ -492,6 +494,8 @@ console.log(res1)
      var last_pos =arr.length -1
    console.log((arr[0] ===1) || arr[last_pos]===1?true: false)
  */
+
+
 // .40. Write a JavaScript program to reverse the elements of a given array of integers length 3.
 /* var arr=[1,2,3]
 console.log(arr.reverse())
@@ -503,4 +507,117 @@ function rev(array){
 var res=rev([1,5,3])
 console.log(res) */
 
-// 41.. Write a JavaScript program to reverse the elements of a given array of integers length 3.
+
+/* function arrCalc(arr){
+    var sum =0
+    for(var i=0; i<arr.length;i++){
+   var result= sum += arr[i]
+    //console.log(result)
+    }
+    return result
+}
+
+var res= arrCalc([2,3,4])
+
+console.log(res) */
+
+// 41..JavaScript program to create a new array taking the middle elements of the two arrays of integer and each length 3..
+/* var arr1=[1,2,5]
+var arr2=[5,4,2]
+var newArr=[]
+newArr.push(arr1[1],arr2[1])
+console.log(newArr) */
+
+
+// 42.. Write a JavaScript to find the longest string from a given array of strings. 
+
+/* var str=['my name is abuHossain suhel'] */
+    
+/* function longest_string(str_ara) {
+    var max = str_ara[0].length;
+    str_ara.map(v => max = Math.max(max, v.length));
+    result = str_ara.filter(v => v.length == max);
+    return result;
+  }
+
+   */
+  /* function arrLong(arr) {
+    let maxStr ='';
+    let max
+    
+    for(let i = 0; i < arr.length; i++){
+    if(arr[i].length > maxStr){
+       // console.log(arr[i])
+    maxStr = arr[i].length;
+    console.log(maxStr)
+    max = arr[i]
+    console.log(max)
+    }
+   console.log(max.length, i)
+    }
+    return max;
+    }
+
+  console.log(maxStrng(['my', 'name', 'is', 'abuHossain', 'suhel'])); */
+
+
+//   43. Write a JavaScript code to divide a given array of positive integers into two parts. First element goes to first part, second element goes to second part, and third element goes to first part and so on. Now compute the sum of two parts and store into an array of size two.
+
+ /*  function filterAr (arr) {
+    let first = [];
+    let second = [];
+    arr.filter((el, index) =>
+    index % 2 === 0 ? first.push(el) : second.push(el)
+    )
+    const reducer = (acc, curr) => acc + curr;
+    const x = first.reduce(reducer).toString();
+    const y = second.reduce(reducer).toString();
+    let newArr = [];
+    newArr.push(x);
+    newArr.push(y);
+    return newArr.map(el => Number(el));
+    }
+    
+    console.log(filterAr([2, 1, 5, 3, 5, 0, 6])); */
+
+    //var strArr=[1,2,3,4,5,6,7,8]
+
+    /* 
+
+      function filtrArr(arr){
+        var firstP =[]
+        var secP =[]
+        var total=[]
+        for(var i =0; i< arr.length; i++){
+            if(arr[i]% 2 === 0){
+                firstP.push(arr[i])
+                console.log(firstP)
+                 var sumP1=0;
+                for(var j =0; j<arr.length;j++){
+                     sumP1 += arr[i]
+                     console.log(sumP1)
+                } 
+            }else if(arr[i]% 2 ===1 ){
+              
+                secP.push(arr[i])
+                console.log(secP)
+               
+                for(var k=0;k<secP.length; k++){
+                   var sump2=0
+                   sump2 += secP[i]
+                   console.log(sump2)
+               } 
+            }
+        }
+        //console.log(sumP1,sump2)
+      //  total.push(sumP1,sump2)
+       // return total.map(el => Number(el));
+      
+      }
+
+   console.log(filtrArr([2, 1, 5, 3, 5, 0, 6]))
+ */
+    
+        
+
+      
