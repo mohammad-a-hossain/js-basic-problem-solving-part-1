@@ -618,6 +618,80 @@ console.log(newArr) */
    console.log(filtrArr([2, 1, 5, 3, 5, 0, 6]))
  */
     
-        
+// 44Find the kth greatest element of a given array of integers.
+/* function findTheKth(array , k){
+    // sorting array :
+    return array.sort()[k-1]; // array from 0 index and last -1
+    }
+    console.log(findTheKth([1,2,6,4,5], 3)); 
 
+    function Kth_greatest_in_array(arr, k) {
+
+        for (var i = 0; i < k; i++) {
+          var max_index = i,
+            tmp = arr[i];
       
+          for (var j = i + 1; j < arr.length; j++) {
+            if (arr[j] > arr[max_index]) {
+              max_index = j;
+            }
+          }
+      
+          arr[i] = arr[max_index];
+          arr[max_index] = tmp;
+        }
+      
+        return arr[k - 1];
+      }
+      
+console.log(Kth_greatest_in_array([1,2,6,4,5], 3))
+function findKth(array,k){
+    var temp;
+    for(j =0;j<k;j++){
+
+   
+    for(var i=0;i<array.length;i++){
+        if(array[i] > array[i+1])
+        {
+            temp = array[i]
+            array[i] =array[i+1]
+            array[i +1] =temp
+        }
+    }
+ }
+ return temp
+}
+console.log(findKth([1,2,6,4,5], 3)) */
+
+// 45.Find the maximum difference between any two adjacent elements and maximum summetin  of a given array of integers.
+
+
+/* function maxDiff(arr){
+    var temp
+    var max =-1
+    for(var i=0;i<arr.length-1; i++){
+        temp =Math.abs(arr[i]- arr[i+1]) 
+        max =Math.max(temp,max)
+    }
+    return max
+}
+console.log(maxDiff([1,2,6,4,5]))
+console.log(maxDiff([1, 2, 3, 18, 9]))
+
+
+// finding maximum sumetion
+function maxSum(arr){
+    var temp
+    var max =-1
+    for(var i=0;i<arr.length-1; i++){
+        temp =Math.abs(arr[i]+ arr[i+1]) 
+        max =Math.max(temp,max)
+    }
+    return max
+}
+console.log(maxSum([1,2,6,4,5]))
+console.log(maxSum([1, 2, 3, 18, 9]))
+
+ */
+// 46.
+// 94. Write a JavaScript program to find the number which appears most in a given array of integers.
