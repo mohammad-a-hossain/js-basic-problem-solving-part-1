@@ -619,21 +619,24 @@ console.log(newArr) */
  */
     
 // 44Find the kth greatest element of a given array of integers.
-/* function findTheKth(array , k){
+/*
+ function findTheKth(array , k){
     // sorting array :
     return array.sort()[k-1]; // array from 0 index and last -1
     }
     console.log(findTheKth([1,2,6,4,5], 3)); 
-
-    function Kth_greatest_in_array(arr, k) {
+ */
+ /*    function Kth_greatest_in_array(arr, k) {
 
         for (var i = 0; i < k; i++) {
-          var max_index = i,
+          var max_index = i
             tmp = arr[i];
-      
+          
           for (var j = i + 1; j < arr.length; j++) {
+
             if (arr[j] > arr[max_index]) {
               max_index = j;
+              //console.log(max_index)
             }
           }
       
@@ -644,26 +647,13 @@ console.log(newArr) */
         return arr[k - 1];
       }
       
+console.log(Kth_greatest_in_array([1,2,6,4,5], 1))
+console.log(Kth_greatest_in_array([1,2,6,4,5], 2))
 console.log(Kth_greatest_in_array([1,2,6,4,5], 3))
-function findKth(array,k){
-    var temp;
-    for(j =0;j<k;j++){
+ */
 
-   
-    for(var i=0;i<array.length;i++){
-        if(array[i] > array[i+1])
-        {
-            temp = array[i]
-            array[i] =array[i+1]
-            array[i +1] =temp
-        }
-    }
- }
- return temp
-}
-console.log(findKth([1,2,6,4,5], 3)) */
 
-// 45.Find the maximum difference between any two adjacent elements and maximum summetin  of a given array of integers.
+// 45.Find the maximum difference between any two adjacent elements and maximum summation  of a given array of integers.
 
 
 /* function maxDiff(arr){
@@ -693,5 +683,97 @@ console.log(maxSum([1,2,6,4,5]))
 console.log(maxSum([1, 2, 3, 18, 9]))
 
  */
-// 46.
-// 94. Write a JavaScript program to find the number which appears most in a given array of integers.
+// 46. Write a JavaScript program to find the number which appears most in a given array of integers.
+/* function countN(arr) {
+
+    var max_count = 0;
+    var num = 0;
+    for (i = 0; i < arr.length; i++) {
+    var count_temp = 0;
+    for (k = i + 1; k < arr.length; k++) {
+    if (arr[i] == arr[k]) {
+    count_temp++;
+    }
+    if (count_temp > max_count) {
+    max_count = count_temp;
+    num = arr[i];
+    }
+    }
+    }
+    return num;
+    }
+    
+    console.log(countN([1, 2, 3, 2, 2, 2, 3, 4, 2, 5, 5, 5, 6, 3, 6, 7, 5])); */
+
+    // 47. find the largest and smallest Number in a array
+  /*   function arrayMin(arr) {
+        return arr.reduce(function (a, b) {
+          return ( a < b ? a : b );
+        });
+      }
+      
+      function arrayMax(arr) {
+        return arr.reduce(function (b, c) {
+          return ( b > c ? b : c );
+        });
+      }
+      console.log(arrayMin([1, 2, 3, 2, 2, 2, 3, 4, 2, 5, 5, 5, 6, 3, 6, 7, 5]))
+      console.log(arrayMax([1, 2, 3, 2, 2, 2, 3, 4, 2, 5, 5, 5, 6, 3, 6, 7, 5])) */
+
+    //   48.Rearrange characters of a given string in such way that it will become equal to another given string
+          
+      /*      function reArrange(strOne,strTwo){
+              var first_string = strOne.split('')  
+              var secnd_string =strTwo.split('') 
+
+              var result =true
+                first_string.sort()
+                secnd_string.sort()
+
+              for(i =0; i< Math.max(first_string.length,secnd_string.length); i++){
+                  if(first_string[i] !== secnd_string[i]){
+                      console.log(first_string, secnd_string)
+                   result=false
+                  }
+             
+          }
+           return result
+        }
+         // console.log(reArrange('abd','cxd')) 
+          console.log(reArrange('abd','dba')) 
+        */
+
+        //   49. Write a JavaScript program to check whether there is at least one element which occurs in two given sorted arrays of integers.
+
+   /*     function findMatch(arra1,arra2){
+              for(var i=0;i<arra1.length;i++){
+                 if(arra2.indexOf(arra1[i]) != -1)
+             
+                     return true
+                 }
+                
+                     return false
+                  
+                 
+             }
+       
+            console.log(findMatch([1,2,3],[3,8,9]))
+            console.log(findMatch([1,8,5],[3,8,9]))
+
+           */
+
+            // 50. Write a JavaScript program to divide an integer by another integer as long as the result is an integer and return the result
+/* 
+            function integNum(num,d){
+                if(d ==1){
+                    return num
+                }else{
+                   while(num % d === 0){
+                       console.log(num)
+                        num /= d 
+                   }
+                  return num
+                }
+               
+            }
+            console.log(integNum(-20,2)) */
